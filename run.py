@@ -70,6 +70,7 @@ class Usuarios(Resource):
             }
 
         return response
+    
 
 class Home(Resource):
     
@@ -78,7 +79,6 @@ class Home(Resource):
 
 
     
-
 api.add_resource(Home, '/')
 api.add_resource(Tarefas, '/tarefa')
 api.add_resource(Usuarios, '/usuario')
