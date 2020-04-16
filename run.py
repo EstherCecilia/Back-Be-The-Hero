@@ -71,7 +71,15 @@ class Usuarios(Resource):
 
         return response
 
+class Home(Resource):
+    
+    def get(self):
+        return "Bem vindo, Adiciona um endpoint para melhor navegar na api"
 
+
+    
+
+api.add_resource(Home, '/')
 api.add_resource(Tarefas, '/tarefa')
 api.add_resource(Usuarios, '/usuario')
 
